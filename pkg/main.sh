@@ -15,6 +15,11 @@ inputBasename=`basename "$input"`
 
 tmpDir=$(mktemp --directory ci-XXXXXXXXXX)
 
+if [ -z "$input" ];then
+  echo "Usage: broken264fixer file.264"
+  exit 1
+fi
+
 if [ ! -f "$USER_PWD/$input" ]; then
   echo "File not found: $USER_PWD/$input"
   exit 1
