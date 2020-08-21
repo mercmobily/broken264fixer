@@ -20,8 +20,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-export LD_LIBRARY_PATH="../lib"
-
 # h264 is the compression, mp4 is a container.
 # A mp4 video contains h264 compressed frames
 #
